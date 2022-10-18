@@ -23,6 +23,6 @@ trait Filterable
      */
     protected function queryFilterName(): string
     {
-        return '\\App\\Models\Filters\\' . class_basename($this) . 'Filter';
+        return '\\App\\Models\\Filters\\' . class_basename($this) . 'Filter';
     }
 }
