@@ -69,7 +69,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
         return Inertia::render('Users/Index', [
-            'users' => User::filter()->paginate()
+            'users' => User::filter()->paginate()->withQueryString()
         ]);
     }
 }
